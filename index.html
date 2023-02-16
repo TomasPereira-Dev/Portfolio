@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tomas Pereira: Front End Developer</title>
@@ -6,74 +7,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
+        <div class="nav-absolute-container">
+            <nav class="navbar">
+                <h2>content</h2>
+                <a href="#about-me" class="about-me-a">About me <i class="fa-solid fa-person-chalkboard"></i></a>
+                <a href="#projects-and-stack">Projects and technologies <i class="fa-solid fa-terminal"></i></a>
+                <a href="#contact">contact <i class="fa-solid fa-envelope"></i></a>
+            </nav>
+        </div>
         <main>
             <section class="header-section">
-                <header class="header">
+                <header class="header">   
                     <div class="title-and-navbar-container">
-                        <h1 class="title">Hello! i'm Tomás<br>A front end developer<br>Nice to meet you!</h1>
-                        <nav class="navbar">
-                            <h2>content</h2>
-                            <ul>
-                                <li><a href="#about-me">About me</a></li>
-                                <li><a href="#projects-and-stack">Projects and technologies</a></li>
-                                <li><a href="#contact">contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                        <div class="waves">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                            </svg>
+                        <div class="text-container">
+                            <h1 class="title">Hello! i'm Tomás<br>A front end developer<br>Nice to meet you!</h1>
                         </div>
+                    </div>
+                    <div class="waves">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
                 </header>
             </section> 
-            <section class="about-me-section" id="about-me">
-                    <figure>
-                        <img src="./photo.jpg" class="portfolio-photo"/>
-                        <figcaption>A photo of Tomás Pereira</figcaption>
-                    </figure>
-                    <div class="about-me-text">
-                        <h2>About Me</h2>
-                        <h2>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old and i have been writing code for a about a year, i'm looking for a first experience in the IT industy </h2>    
-                    </div>
-            </section>
-            <section class="projects-and-stack-section" id="projects-and-stack">
-                    <h2>here are some of my best projects to date</h2>
-                    <div class="projects-wrapper">
-                        <div class="project-container">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eligendi temporibus perspiciatis deleniti expedita corrupti, unde amet? Ducimus, id quae? Ipsa quisquam velit delectus facere, assumenda ipsam earum vero distinctio.
-                        </div>
-                        <div class="project-container">
-                            <img src="./screenshot weather-app.png" class="weather-app-screenshot">
-                        </div>
-                    </div>    
 
-                    <div class="stack-wrapper">
-                        <h2>this are the technologies i use for my projects at this momment</h2>
-                        <div class="stack-container">
-                            <div class="technologies">
-                                <i class="fa-brands fa-html5 logo"></i>
-                                <i class="fa-brands fa-css3 logo"></i>
-                                <i class="fa-brands fa-js logo"></i>
-                                <i class="fa-brands fa-react logo"></i>
-                                <i class="fa-brands fa-git-alt logo"></i>
-                                <i class="fa-brands fa-square-github logo"></i>
-
-                            </div>
-                        </div>
-                    </div>
-    
-            </section>
-            <section class="contact-section" id="contact">
-                <h2>let's get in touch</h2>
-                    <address class="contact-info">
-                        <h3>Github: tomas-pereira-dev</h3>
-                        <h3>Email: tomaspereira2k@gmail.com</h3>
-                        <h3>linkedIn: TomasPereiraDev</h3>
-                    </address>
-            </section> 
             
-            <footer>Made with love by Tomás Pereira, from Buenos Aires to the world :)</footer>    
+            <section class="about-me-section" id="about-me">
+                <h2>About Me</h2>
+                <div class="about-me-text-and-photo-container">
+                    <h2>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old and i have been writing code for a about a year, i'm looking for a first experience in the IT industy </h2>    
+                </div>
+                <div class="about-me-waves">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="projects-and-stack-section" id="projects-and-stack">
+                <h2>here are some of my best projects to date</h2>
+                <div class="projects-wrapper">
+                    <div class="project-container">
+                        sampletext 
+                    </div>
+                    <div class="project-container">
+                        <img src="./screenshot weather-app.png" class="weather-app-screenshot">
+                    </div>
+                </div>    
+        
+                <div class="stack-wrapper">
+                    <h2>this are the technologies i use for my projects at this momment</h2>
+                    <div class="stack-container">
+                        <div class="technologies">
+                            <i class="fa-brands fa-html5 logo"></i>
+                            <i class="fa-brands fa-css3 logo"></i>
+                            <i class="fa-brands fa-js logo"></i>
+                            <i class="fa-brands fa-react logo"></i>
+                            <i class="fa-brands fa-git-alt logo"></i>
+                            <i class="fa-brands fa-square-github logo"></i>
+                        </div>
+                    </div>
+                </div>
+        
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>let's get in touch</h2>
+                <address class="contact-info">
+                    <h3>Github: tomas-pereira-dev</h3>
+                    <h3>Email: tomaspereira2k@gmail.com</h3>
+                    <h3>linkedIn: TomasPereiraDev</h3>
+                </address>
+        </section> 
+        
+        <footer>Made with love by Tomás Pereira, from Buenos Aires to the world :)</footer> 
         </main>
     </body>
 </html>
