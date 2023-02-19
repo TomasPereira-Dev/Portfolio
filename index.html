@@ -2,36 +2,41 @@
 <html>
     <head>
         <title>Tomas Pereira: Front End Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/33949f79d9.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <nav class="navbar">
-            <a href="#about-me" class="about-me-a">About me <i class="fa-solid fa-person-chalkboard"></i></a>
-            <a href="#projects-and-stack">Projects and technologies <i class="fa-solid fa-terminal"></i></a>
-            <a href="#contact">contact <i class="fa-solid fa-envelope"></i></a>
-        </nav>
         <main>
             <section class="header-section">
                 <header class="header">   
                     <div class="title-and-navbar-container">
                         <div class="text-container">
-                            <i class="fa-solid fa-person fa-10x"></i>
-                            <h1 class="title">i'm Tomás<br>front end developer<br>Nice to meet you!</h1>
+                            <!--<i class="fa-solid fa-person fa-10x"></i>-->
+                            <div class="title">
+                                <h4>トマス・ペレイラ、フロントエンド開発者、はじめまして！</h4>
+                                <h1>Tomás Pereira</h1>
+                                <h2>Front End Developer</h2>
+                                <h3>Nice to meet you!</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="waves">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                        </svg>
-                    </div>
                 </header>
+                <nav class="navbar">
+                    <a href="#Projects">Projects<i class="fa-solid fa-terminal"></i></a>
+                    <a href="#about-me" class="about-me-a">About me <i class="fa-solid fa-person-chalkboard"></i></a>
+                    <a href="#contact">contact <i class="fa-solid fa-envelope"></i></a>
+                    <a href="./TomasPereiraFrontEndCV.pdf" download>Download the resume</a>
+                </nav>
             </section> 
-
-            
-            <section class="projects-and-stack-section" id="projects-and-stack">
-                <h2>here are some of my best projects to date</h2>
+ 
+            <section class="projects-section" id="Projects">
+                <div class="title">
+                    <h2>My Projects</h2>
+                </div> 
                 <div class="projects-wrapper">
                     <div class="project-container">
                         sampletext 
@@ -39,26 +44,48 @@
                     <div class="project-container">
                         <img src="./screenshot weather-app.png" class="weather-app-screenshot">
                     </div>
+                    <div class="project-container">
+                        sampletext 
+                    </div>
                 </div>    
             </section>
 
-
             <section class="about-me-section" id="about-me">
-                <div class="about-me-text-and-photo-container">
-                    <h2>About Me</h2>
-                    <h2>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old and i have been writing code for a about a year, i'm looking for a first experience in the IT industy </h2>    
+                <div class="about-me-text-container">
+                    <div class="text title">
+                        <h2>About Me</h2>
+                        <p>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old and i have been writing code for a about a year, i'm looking for a first experience in the IT industy </p>
+                    </div>    
                 </div>
                 <div class="stack-wrapper">
-                    <h2>My stack</h2>
-                    <div class="stack-container">
-                        <div class="technologies">
+                    <div class="title technologies">
+                        <h2 class="stack-title">My stack</h2>
+                        <div class="technology">
                             <i class="fa-brands fa-html5 logo"></i>
-                            <i class="fa-brands fa-css3 logo"></i>
-                            <i class="fa-brands fa-js logo"></i>
-                            <i class="fa-brands fa-react logo"></i>
-                            <i class="fa-brands fa-git-alt logo"></i>
-                            <i class="fa-brands fa-square-github logo"></i>
+                            <p>HTML5</p>
                         </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-css3 logo"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-js logo"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-react logo"></i>
+                            <p>React.js</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-git-alt logo"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-square-github logo"></i>
+                            <p>Github</p>
+                        </div>
+                    </div>
+                    <div class="stack-container">
                     </div>
                 </div>
             </section>
@@ -70,9 +97,21 @@
                     <h3>Email: tomaspereira2k@gmail.com</h3>
                     <h3>linkedIn: TomasPereiraDev</h3>
                 </address>
-            </section> 
+                <form class="contact-form" action="https://formspree.io/f/xdovgobv" method="POST">
+                    <label>
+                      Your email:
+                      <input type="email" name="email">
+                    </label>
+                    <label>
+                      Your message:
+                      <textarea name="message"></textarea>
+                    </label>
+                    your other form fields go here
+                    <button type="submit">Send</button>
+                </form> 
+            </section>
         
-        <footer>Made with love by Tomás Pereira, from Buenos Aires to the world :)</footer> 
+            <footer>Made with love by Tomás Pereira, from Buenos Aires to the world :)</footer>-->
         </main>
     </body>
 </html>
