@@ -39,13 +39,13 @@
                 </div> 
                 <div class="projects-wrapper">
                     <div class="project-container">
-                        <img src="./screenshot-chat-app_256x512.png" class="project-img">
+                        <img src="./screenshot-chat-app_1_256x256.png" class="project-img">
                     </div>
                     <div class="project-container">
-                        <img src="./screenshot_weather-app.png" class="project-img">
+                        <img src="./screenshot_weather-app_3_256x256.png" class="project-img">
                     </div>
-                    <div class="project-container">
-                        Coming soon! 
+                    <div class="project-container coming-soon">
+                        <h2>Coming soon!</h2> 
                     </div>
                 </div>    
             </section>
@@ -92,25 +92,29 @@
                 <div class="title contact-info">
                     <h2>Let's get in touch</h2>
                     <address>
-                        <h3>Recidency: Palermo, Ciudad Autonoma de Buenos Aires</h3>
-                        <h3>Phone: +54 9 1128815089</h3>
-                        <h3>linkedIn: TomasPereiraDev</h3>
-                        <h3>Github: tomas-pereira-dev</h3>
+                        <h3>Recidency: Nuñez, Ciudad Autonoma de Buenos Aires</h3>
+                        <h3><a href="https://www.linkedin.com/in/tomas-pereira-dev/" target="_blank">LinkedIn<i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                        <h3><a href="https://github.com/TomasPereira-Dev" target="_blank">Github<i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
                     </address>
                 </div>
 
-                <form class="contact-form" action="https://formspree.io/f/xdovgobv" method="POST">
-                    <label>
-                      Your email:
-                      <input type="email" name="email">
-                    </label>
-                    <label>
-                      Your message:
-                      <textarea name="message"></textarea>
-                    </label>
-                    your other form fields go here
-                    <button type="submit">Send</button>
-                </form> 
+                <div class="form-container">
+                    <form class="contact-form" action="https://formspree.io/f/xdovgobv" method="POST">
+                        <label>
+                            Subject:
+                            <input type="text" name="text" placeholder="The Subject Here">
+                        </label>
+                        <label>
+                          Your email:
+                          <input type="email" name="email" placeholder="Your Email Here">
+                        </label>
+                        <label>
+                          Your message:
+                          <textarea name="message" placeholder="Your Message" rows="12"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </section>
         </main>
     </body>
