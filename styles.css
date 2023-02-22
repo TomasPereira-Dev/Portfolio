@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: hsl(0, 15%, 95%);
+}
+
 section{
     line-height: 1.2;
     margin: 64px 0 64px 0;
@@ -21,6 +25,7 @@ a{
 
 h1{
     font-family: "BIZ UDPGothic", sans-serif;
+    color: hsl(0, 5%, 10%);
     font-weight: 700;
     font-size: 64px;
 }
@@ -29,24 +34,28 @@ h2{
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 400;
     font-size: 32px;
+    color: hsl(0, 5%, 10%);
 }
 
 h3{
     font-family: "roboto" , sans-serif;
     font-weight: 100;
     font-size: 24px;
+    color: hsl(0, 5%, 10%);    
 }
 
 h4{
     font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: hsl(0, 5%, 10%);    
 }
 
 p{
     font-family: "roboto" , sans-serif;
     font-weight: 300;
     font-size: 24px;
+    color: hsl(0, 15%, 10%);    
 }
 
 main{
@@ -127,6 +136,10 @@ main{
     width: 256px;
 }
 
+.project-img{
+    filter: brightness(45%) blur(1px);   
+}
+
 .coming-soon{
     display: flex; 
     justify-content: center;
@@ -145,6 +158,8 @@ main{
 
 .about-me-text-container{
     width: 50vw;
+    border-left: 2px solid #F97472;
+    background-color: #F9B872;
 }
 
 .stack-wrapper{
@@ -189,6 +204,7 @@ main{
 }
 
 .contact-form input ,textarea{
+    background-color:  hsl(0, 15%, 95%);;
     font-family: "roboto", sans-serif;
     border-left: none;
     border-right: none;
