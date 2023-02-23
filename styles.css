@@ -25,6 +25,11 @@ button{
     font-family: "roboto", sans-serif;
 }
 
+label{
+    display: flex;
+    flex-direction: column;
+}
+
 h1{
     font-family: "BIZ UDPGothic", sans-serif;
     color: hsl(0, 5%, 10%);
@@ -85,7 +90,7 @@ main{
 .navbar{
     text-align: left;
     margin: 8px 0 8px 0;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .navbar a{
@@ -137,7 +142,6 @@ main{
     overflow: hidden;
     box-shadow: 4px 4px #F9B872;
     background-color: rgba(150, 150, 150, 0.151);
-    z-index: 2;
     text-align: center;
 }
 
@@ -274,7 +278,90 @@ main{
     padding: 8px;
 }
 
-label{
-    display: flex;
-    flex-direction: column;
+
+/*media queries*/
+@media(max-width: 480px){
+
+    h4{
+        font-size: 12px;
+    }
+
+    .title h1{
+        font-size: 32px;
+    }
+
+    .title h2{
+        font-size: 24px;
+    }
+
+    .navbar{
+        font-size: 12px;
+    }
+
+    .navbar a{
+        margin: 4px;
+    }
+
+    .projects-section{
+        align-items: center;
+    }
+
+    .projects-wrapper{
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .coming-soon{
+        height: 350px;
+    }
+
+    .about-me-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .about-me-text-container{
+        width: 100vw;
+        border: none;
+    }
+
+    .about-me-title{
+        text-align: center;
+    }
+
+    .stack-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .stack-title{
+        text-align: center;
+    }
+
+    .firebase-logo{
+        width: 1em;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+
+    .about-me-section{
+        overflow: hidden;
+    }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        width: 100vw;
+    }
+
+    .contact-info{
+        text-align: center;
+    }
 }
+
