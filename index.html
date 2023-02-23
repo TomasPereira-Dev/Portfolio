@@ -1,6 +1,10 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tomas Pereira: Front End Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/33949f79d9.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,72 +12,150 @@
     <body>
         <main>
             <section class="header-section">
-                <header class="header">
+                <header class="header">   
                     <div class="title-and-navbar-container">
-                        <h1 class="title">Hello! i'm Tomás<br>A front end developer<br>Nice to meet you!</h1>
-                        <nav class="navbar">
-                            <h2>content</h2>
-                            <ul>
-                                <li><a href="#about-me">About me</a></li>
-                                <li><a href="#projects-and-stack">Projects and technologies</a></li>
-                                <li><a href="#contact">contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                        <div class="waves">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                            </svg>
-                        </div>
-                </header>
-            </section> 
-            <section class="about-me-section" id="about-me">
-                    <figure>
-                        <img src="./photo.jpg" class="portfolio-photo"/>
-                        <figcaption>A photo of Tomás Pereira</figcaption>
-                    </figure>
-                    <div class="about-me-text">
-                        <h2>About Me</h2>
-                        <h2>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old and i have been writing code for a about a year, i'm looking for a first experience in the IT industy </h2>    
-                    </div>
-            </section>
-            <section class="projects-and-stack-section" id="projects-and-stack">
-                    <h2>here are some of my best projects to date</h2>
-                    <div class="projects-wrapper">
-                        <div class="project-container">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eligendi temporibus perspiciatis deleniti expedita corrupti, unde amet? Ducimus, id quae? Ipsa quisquam velit delectus facere, assumenda ipsam earum vero distinctio.
-                        </div>
-                        <div class="project-container">
-                            <img src="./screenshot weather-app.png" class="weather-app-screenshot">
-                        </div>
-                    </div>    
-
-                    <div class="stack-wrapper">
-                        <h2>this are the technologies i use for my projects at this momment</h2>
-                        <div class="stack-container">
-                            <div class="technologies">
-                                <i class="fa-brands fa-html5 logo"></i>
-                                <i class="fa-brands fa-css3 logo"></i>
-                                <i class="fa-brands fa-js logo"></i>
-                                <i class="fa-brands fa-react logo"></i>
-                                <i class="fa-brands fa-git-alt logo"></i>
-                                <i class="fa-brands fa-square-github logo"></i>
-
+                        <div class="text-container">
+                            <!--<i class="fa-solid fa-person fa-10x"></i>-->
+                            <div class="title">
+                                <h4>トマス・ペレイラ、フロントエンド開発者、はじめまして！</h4>
+                                <h1>Tomás Pereira</h1>
+                                <h2>Front End Developer</h2>
+                                <h3>Nice to meet you!</h3>
                             </div>
                         </div>
                     </div>
-    
-            </section>
-            <section class="contact-section" id="contact">
-                <h2>let's get in touch</h2>
-                    <address class="contact-info">
-                        <h3>Github: tomas-pereira-dev</h3>
-                        <h3>Email: tomaspereira2k@gmail.com</h3>
-                        <h3>linkedIn: TomasPereiraDev</h3>
-                    </address>
+                </header>
+                <nav class="navbar">
+                    <a href="#Projects">Projects</i></a>
+                    <a href="#about-me" class="about-me-a">About me</i></a>
+                    <a href="#contact">contact </a>
+                    <a href="./TomasPereiraFrontEndCV.pdf" download>Download the resume</a>
+                </nav>
             </section> 
-            
-            <footer>Made with love by Tomás Pereira, from Buenos Aires to the world :)</footer>    
+ 
+            <section class="projects-section" id="Projects">
+                <div class="title">
+                    <h2>My Projects</h2>
+                </div> 
+                <div class="projects-wrapper">
+                    <div class="project-container">
+                        <a href="https://tomaspereira-dev.github.io/realtime-chat-firebase/" target="_blank">
+                            <img src="./screenshot-chat-app_1_256x256.png" class="project-img" alt="Realtime Chat App">
+                        </a>    
+                        <figure><p>A realtime chat app with an authentification system</p></figure>
+                        <div class="project-technology-container">
+                            <div class="project-technology">
+                                <p>React.js</p>
+                            </div>
+                            <div class="project-technology">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/TomasPereira-Dev/realtime-chat-firebase" target="_blank">
+                            <div class="github-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <p>source code</p> 
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="project-container">
+                        <a href="https://tomaspereira-dev.github.io/react-weather-app/" target="_blank">
+                            <img src="./screenshot_weather-app_3_256x256.png" class="project-img" alt="Weather Forecast App">
+                        </a>
+                        <figure><p>Weather forecast app using several APIs</p></figure>
+                        <div class="project-technology-container">
+                            <div class="project-technology">
+                                <p>React.js</p>
+                            </div>
+                            <div class="project-technology">
+                                <p>APIs</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/TomasPereira-Dev/react-weather-app" target="_blank">
+                            <div class="github-code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <p>source code</p> 
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="project-container coming-soon">
+                        <h2>Coming soon!</h2> 
+                    </div>
+                </div>    
+            </section>
+
+            <section class="about-me-section" id="about-me">
+                <div class="about-me-text-container">
+                    <div class="text title">
+                        <h2>About Me</h2>
+                        <p>I'm a self taught front end developer living in Buenos Aires, Argentina, i'm 22 years old, looking for a first professional experience in the IT industy, I'm constantly learning new ways to build great apps, whether it's learning a new library, framework, or better ways to write  efficient, cleaner code. Outside coding i also have a passion for arts, music and psychology.</p>
+                    </div>    
+                </div>
+                <div class="stack-wrapper">
+                    <div class="title technologies">
+                        <h2 class="stack-title">My Stack</h2>
+                        <div class="technology">
+                            <i class="fa-brands fa-html5 logo"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-css3 logo"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-js logo"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-react logo"></i>
+                            <p>React.js</p>
+                        </div>
+                        <div class="technology">
+                            <img src="./logo-firebase.svg">
+                            <p>Firebase</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-git-alt logo"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="technology">
+                            <i class="fa-brands fa-square-github logo"></i>
+                            <p>Github</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="title contact-info">
+                    <h2>Let's get in touch</h2>
+                    <address>
+                        <h3>Recidency: Nuñez, Ciudad Autonoma de Buenos Aires</h3>
+                        <h3><a href="https://www.linkedin.com/in/tomas-pereira-dev/" target="_blank">LinkedIn<i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                        <h3><a href="https://github.com/TomasPereira-Dev" target="_blank">Github<i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                    </address>
+                </div>
+
+                <div class="form-container">
+                    <form class="contact-form" action="https://formspree.io/f/xdovgobv" method="POST">
+                        <label>
+                            Subject:
+                            <input type="text" name="text" placeholder="The Subject Here">
+                        </label>
+                        <label>
+                          Your email:
+                          <input type="email" name="email" placeholder="Your Email Here">
+                        </label>
+                        <label>
+                          Your message:
+                          <textarea name="message" placeholder="Your Message" rows="12"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
         </main>
     </body>
 </html>
