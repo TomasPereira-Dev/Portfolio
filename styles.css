@@ -240,6 +240,30 @@ main{
     font-size: 5em;
 }
 
+.fa-html5{
+    color: #e34c26;
+}
+
+.fa-css3{
+    color:  #264de4;
+}
+
+.fa-js{
+    color: #f0db4f;
+}
+
+.fa-react{
+    color: #61DBFB;
+}
+
+.fa-git-alt{
+    color: #F1502F;
+}
+
+.fa-square-github{
+    color: #171515;
+}
+
 .contact-section{
     display: flex;
     gap: 16px;
@@ -342,8 +366,17 @@ main{
     }
 
     .firebase-logo{
-        width: 1em;
+        width: 2.5rem;
     }
+
+    .postcss-logo{
+        width: 2.5rem;
+    }
+
+    .vite-logo{
+        width: 2.5rem;
+    }
+
     .logo{
         font-size: 2.5rem;
     }
